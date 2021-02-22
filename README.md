@@ -1,4 +1,4 @@
-# PyTorch 中文手册 （pytorch handbook）
+# PyTorch 中文手册（pytorch handbook）
 ![pytorch](https://raw.githubusercontent.com/pytorch/pytorch/master/docs/source/_static/img/pytorch-logo-dark.png)
 
 ## 书籍介绍
@@ -11,27 +11,51 @@
 ## 版本说明
 由于PyTorch版本更迭，教程的版本会与PyTorch版本，保持一致。
 
-12月8日PyTorch已经发布1.0的稳定版。
-API的改动不是很大，本教程已经通过测试，保证能够在1.0中正常运行。
-不过目前看影响不大，因为毕竟内容还不多。 v0.4.1已经新建了分支作为存档，并且该不会再进行更新了。
+[pytorch大版本更新的主要变动总结](pytorch-changelog.md)  当前版本 1.7
 
-[官方1.0说明](https://github.com/pytorch/pytorch/releases/tag/v1.0.0)
-[主要改动中文说明](changelog-v1.0.md)
+## QQ 5群 
+
+群号：894059877
+
+扫描二维码
+
+![QR](Pytorch-Handbook-5.png) 
+
+[点击链接加入群聊 『PyTorch Handbook 交流5群』](//jq.qq.com/?_wv=1027&k=HI1gtcVa)
+
+1群(985896536)已满，2群(681980831) 3群(773681699)已满  4群(884017356)已满 
+
+不要再加了
+
+## 新福利
+
+公众账号每日分享干货文章
+![weixin QR](deephub.jpg) 
 
 
+
+## 说明
+
+- 修改错别字请直接提issue或PR
+
+- PR时请注意版本
+
+- 有问题也请直接提issue
+
+感谢
 
 ## 目录
 
-### 第一章： pytorch入门
+### 第一章：PyTorch 入门
 
-1. [Pytorch 简介](chapter1/1.1-pytorch-introduction.md)
-2. [Pytorch环境搭建](chapter1/1.2-pytorch-installation.md)
-3. [PyTorch 深度学习:60分钟快速入门 （官方）](chapter1/1.3-deep-learning-with-pytorch-60-minute-blitz.md)
+1. [PyTorch 简介](chapter1/1.1-pytorch-introduction.md)
+2. [PyTorch 环境搭建](chapter1/1.2-pytorch-installation.md)
+3. [PyTorch 深度学习：60分钟快速入门（官方）](chapter1/1.3-deep-learning-with-pytorch-60-minute-blitz.md)
     - [张量](chapter1/1_tensor_tutorial.ipynb)
-    - [Autograd: 自动求导](chapter1/2_autograd_tutorial.ipynb) 
+    - [Autograd：自动求导](chapter1/2_autograd_tutorial.ipynb) 
     - [神经网络](chapter1/3_neural_networks_tutorial.ipynb)
     - [训练一个分类器](chapter1/4_cifar10_tutorial.ipynb)
-    - [选读：数据并行处理(多GPU)](chapter1/5_data_parallel_tutorial.ipynb)
+    - [选读：数据并行处理（多GPU）](chapter1/5_data_parallel_tutorial.ipynb)
 4. [相关资源介绍](chapter1/1.4-pytorch-resource.md)
 
 ### 第二章 基础
@@ -39,14 +63,14 @@ API的改动不是很大，本教程已经通过测试，保证能够在1.0中�
 1. [张量](chapter2/2.1.1.pytorch-basics-tensor.ipynb)
 2. [自动求导](chapter2/2.1.2-pytorch-basics-autograd.ipynb)
 3. [神经网络包nn和优化器optm](chapter2/2.1.3-pytorch-basics-nerual-network.ipynb)
-4. [数据的加载和预处理](chapter2/2.1.4-pytorch-basics-data-lorder.ipynb)
+4. [数据的加载和预处理](chapter2/2.1.4-pytorch-basics-data-loader.ipynb)
 #### 第二节 深度学习基础及数学原理
 
 [深度学习基础及数学原理](chapter2/2.2-deep-learning-basic-mathematics.ipynb)
 
 #### 第三节 神经网络简介
 
-[神经网络简介](chapter2/2.3-deep-learning-neural-network-introduction.ipynb)
+[神经网络简介](chapter2/2.3-deep-learning-neural-network-introduction.ipynb)  注：本章在本地使用微软的Edge打开会崩溃，请使Chrome Firefox打开查看
 
 #### 第四节 卷积神经网络
 
@@ -79,20 +103,43 @@ API的改动不是很大，本教程已经通过测试，保证能够在1.0中�
 
 [visdom](chapter4/4.2.1-visdom.ipynb)
 
-[tensorboardx](chapter4/4.2.2-tensorboardx.ipynb)
+[tensorboardx](chapter4/4.2.2-tensorboardx.ipynb) 
 
-#### 第三节 fastai
-#### 第四节 数据处理技巧
-#### 第五节 并行计算
+[可视化理解卷积神经网络](chapter4/4.2.3-cnn-visualizing.ipynb)
+
+#### 第三节 Fast.ai
+[Fast.ai](chapter4/4.3-fastai.ipynb)
+#### 第四节 训练的一些技巧
+
+#### 第五节 多GPU并行训练
+[多GPU并行计算](chapter4/4.5-multiply-gpu-parallel-training.ipynb)
+
+#### 补充翻译文章：在PyTorch中使用DistributedDataParallel进行多GPU分布式模型训练
+[在PyTorch中使用DistributedDataParallel进行多GPU分布式模型训练](chapter4/distributeddataparallel)
+
 
 ### 第五章 应用
 #### 第一节 Kaggle介绍
+[Kaggle介绍](chapter5/5.1-kaggle.md)
 #### 第二节 结构化数据
+[Pytorch处理结构化数据](chapter5/5.2-Structured-Data.ipynb)
 #### 第三节 计算机视觉
+[Fashion MNIST 图像分类](chapter5/5.3-Fashion-MNIST.ipynb)
 #### 第四节 自然语言处理
 #### 第五节 协同过滤
 
 ### 第六章 资源
+
+
+### 第七章 附录
+
+[树莓派编译安装 pytorch 1.4](pi/)
+
+transforms的常用操作总结
+
+pytorch的损失函数总结
+
+pytorch的优化器总结
 
 ## License
 
